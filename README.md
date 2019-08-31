@@ -1,4 +1,4 @@
-Fault diagnosis and control for multirotors with sensor faults
+Fault diagnosis and control for multirotors with sensor faults under ground effect
 
 Overview
 
