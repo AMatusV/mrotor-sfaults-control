@@ -7,6 +7,9 @@ This repository contains a fault diagnosis scheme and control strategy for multi
 Natively, the ROS package was written for Kinetic Kame. The package has the following dependencies:
 
 EIGEN3
+
 angles
+
 control_toolbox
+
 bebop_msgs
