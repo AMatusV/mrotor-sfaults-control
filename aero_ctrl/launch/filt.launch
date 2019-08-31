@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="param_file" default="$(find aero_ctrl)/config/filt.yaml" />
+
+   <node name="filter_node" pkg="aero_ctrl" type="filter_ext_node" output="screen" >
+		<remap from="meas" to="ORB2/pose" />
+    <remap from="debug" to="fil_debug" />
+    <remap from="enable" to="fil_enable" />  
+    <rosparam command="load" file="$(arg param_file)" />
+	</node>
+
+</launch>

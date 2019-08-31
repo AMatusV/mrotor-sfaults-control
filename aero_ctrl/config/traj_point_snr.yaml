@@ -1,0 +1,58 @@
+# All values are metric, angles are in radians
+plan:
+  -
+    action: 'wait'
+    duration: 5.0
+  -
+    action: 'cam'
+    duration: 5.0
+    target: -83
+  -
+    action: 'takeoff'
+    duration: 4.0
+  -
+    action: 'slam'
+    duration: 0.5
+    target: 1
+  -
+    action: 'setpoint'
+    duration: 0.1
+    target:
+      px: 0.0
+      py: 0.0
+      pz: 1.0
+      yaw: 0.0
+  -
+    action: 'ctrl'
+    duration: 5.0
+    target: true
+  -
+    action: 'setpoint'
+    duration: 0.1
+    target:
+      px: 0.0
+      py: 0.0
+      pz: 0.48
+      yaw: 0.0
+  -
+    action: 'fil'
+    duration: 0.1
+    target: true
+  -
+    action: 'wait'
+    duration: 30.0
+  -
+    action: 'fil'
+    duration: 0.1
+    target: false
+  -
+    action: 'ctrl'
+    duration: 0.1
+    target: false
+  -
+    action: 'slam'
+    duration: 0.1
+    target: 0
+  -
+    action: 'land'
+    duration: 1.0

@@ -1,0 +1,37 @@
+update_freq: 100.0
+min_alt: 0.3
+max_alt: 2.5
+feedback_pred_factor: 0.2
+safety_send_zero: true
+zero_xy_hover: false
+
+qr_mass: 0.4875
+qr_Ixx: 0.00223
+qr_Iyy: 0.00299
+qr_Izz: 0.00480
+grav: 9.81
+
+mod_kp: 0.1
+mod_ki: 0.0
+mod_kd: 0.5
+
+pid_forward:
+  p: 0.05
+  i: 0.0
+  d: 0.07
+  i_clamp: 0.02
+pid_lateral:
+  p: 0.05
+  i: 0.0
+  d: 0.07
+  i_clamp: 0.02
+pid_yaw:
+  p: 0.1
+  i: 0.0
+  d: 0.0
+  i_clamp: 0.02
+pid_alt:
+  p: 1.0
+  i: 0.0
+  d: 0.0
+  i_clamp: 0.5

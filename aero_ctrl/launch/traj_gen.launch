@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<launch>
+  <arg name="plan_file" default="$(find aero_ctrl)/config/traj_point.yaml" />
+
+  <node name="generate_trajectory" type="generate_trajectory.py" pkg="aero_ctrl" output="screen">
+    <remap from="setpoint" to="setpoint_pose" />
+    <remap from="takeoff" to="bebop/takeoff" />
+    <remap from="land" to="bebop/land" />
+    <remap from="camera_control" to="bebop/camera_control" />
+    <rosparam command="load" file="$(arg plan_file)" />
+  </node>
+</launch>

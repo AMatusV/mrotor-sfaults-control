@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+   <arg name="param_file" default="$(find aero_ctrl)/config/beb_pos_smc.yaml" />
+
+  <node pkg="keyboard" type="custom" name="keyboard_node" output="screen" />
+
+  <node name="pos_smc_node" pkg="aero_ctrl" type="beb_pos_smc_node" output="screen" >
+    <remap from="slam" to="ORB2/pose" />
+    <remap from="vicon" to="vicon/bebop_m/bebop_m" />
+    <rosparam command="load" file="$(arg param_file)" />
+  </node>
+
+</launch>

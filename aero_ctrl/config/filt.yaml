@@ -1,0 +1,22 @@
+update_freq: 50
+alpha: 1.0
+beta: 0.0
+kappa: 2.0
+
+qr_mass: 0.4875
+qr_Ixx: 0.00223
+qr_Iyy: 0.00299
+qr_Izz: 0.00480
+grav: 9.81
+
+# Initial state mean
+init_sta: [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.82, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+# Diagonal elements of the initial state covariance
+init_sta_cov: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.00001, 0.00001, 0.00001, 1.0, 1.0, 1.0] 
+
+# Diagonal elements of the process covariance
+proc_cov: [0.0000001, 0.0000001, 0.0000001, 0.000001, 0.000001, 0.000001, 0.00001, 0.00001, 0.00001, 0.0001, 0.0001, 0.0001]
+
+# Diagonal elements of the measurement covariance
+meas_cov: [0.001, 0.001, 0.001, 0.0001, 0.0001, 0.0001]
